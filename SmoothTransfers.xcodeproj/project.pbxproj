@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15D18B52A85F44816D681A4D /* Pods_SmoothTransfersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9AF271A3EB92EC13C6DFAD7 /* Pods_SmoothTransfersTests.framework */; };
+		26A645E9786E1599F95C02C9 /* Pods_SmoothTransfers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553E46929C7AF1AC49EE1551 /* Pods_SmoothTransfers.framework */; };
+		7A9CB3A790F54F191EB1A6B5 /* Pods_SmoothTransfersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF00105C6DDE19DC357AB9F /* Pods_SmoothTransfersUITests.framework */; };
+		A53DEF1D21390ED40052B585 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53DEF1C21390ED40052B585 /* APIKit.framework */; };
+		A53DEF1F21390ED90052B585 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53DEF1E21390ED90052B585 /* Result.framework */; };
+		A53DEF2121390EDD0052B585 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53DEF2021390EDD0052B585 /* SwiftyJSON.framework */; };
 		A55DF91C2138DED200567AC8 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55DF91B2138DED200567AC8 /* ListTableViewController.swift */; };
 		A55DF91E2138DEF600567AC8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55DF91D2138DEF600567AC8 /* SettingViewController.swift */; };
 		A55DF9232138DFE900567AC8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55DF9212138DFE900567AC8 /* TableViewCell.swift */; };
 		A55DF9242138DFE900567AC8 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A55DF9222138DFE900567AC8 /* TableViewCell.xib */; };
+		A55DF9262138F3FB00567AC8 /* TokyoChallengeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55DF9252138F3FB00567AC8 /* TokyoChallengeAPI.swift */; };
 		A5F783712138D18600E7438D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F783702138D18600E7438D /* AppDelegate.swift */; };
 		A5F783762138D18600E7438D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F783742138D18600E7438D /* Main.storyboard */; };
 		A5F783782138D18800E7438D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5F783772138D18800E7438D /* Assets.xcassets */; };
@@ -41,6 +48,7 @@
 		A55DF91D2138DEF600567AC8 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A55DF9212138DFE900567AC8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		A55DF9222138DFE900567AC8 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		A55DF9252138F3FB00567AC8 /* TokyoChallengeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokyoChallengeAPI.swift; sourceTree = "<group>"; };
 		A5F7836D2138D18600E7438D /* SmoothTransfers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmoothTransfers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F783702138D18600E7438D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5F783752138D18600E7438D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,6 +61,9 @@
 		A5F7838C2138D18900E7438D /* SmoothTransfersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmoothTransfersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F783902138D18900E7438D /* SmoothTransfersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothTransfersUITests.swift; sourceTree = "<group>"; };
 		A5F783922138D18900E7438D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9AF271A3EB92EC13C6DFAD7 /* Pods_SmoothTransfersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmoothTransfersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE044B7731A5602D25CC1BD9 /* Pods-SmoothTransfers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothTransfers.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmoothTransfers/Pods-SmoothTransfers.release.xcconfig"; sourceTree = "<group>"; };
+		FD3822419B8D94DEDD7ECDF2 /* Pods-SmoothTransfers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothTransfers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmoothTransfers/Pods-SmoothTransfers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +71,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A53DEF2121390EDD0052B585 /* SwiftyJSON.framework in Frameworks */,
+				A53DEF1F21390ED90052B585 /* Result.framework in Frameworks */,
+				A53DEF1D21390ED40052B585 /* APIKit.framework in Frameworks */,
+				26A645E9786E1599F95C02C9 /* Pods_SmoothTransfers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15D18B52A85F44816D681A4D /* Pods_SmoothTransfersTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +90,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A9CB3A790F54F191EB1A6B5 /* Pods_SmoothTransfersUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78C89034D3506D9959DFADA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD3822419B8D94DEDD7ECDF2 /* Pods-SmoothTransfers.debug.xcconfig */,
+				EE044B7731A5602D25CC1BD9 /* Pods-SmoothTransfers.release.xcconfig */,
+				264ABED20301A96346497D19 /* Pods-SmoothTransfersTests.debug.xcconfig */,
+				0DCAC86D9A09D7E19BA3FA11 /* Pods-SmoothTransfersTests.release.xcconfig */,
+				1F72E9FBFB3D1867DB5BFFC7 /* Pods-SmoothTransfersUITests.debug.xcconfig */,
+				96A003E4080BFD5076F4E18E /* Pods-SmoothTransfersUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A5F783642138D18600E7438D = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +117,8 @@
 				A5F783842138D18800E7438D /* SmoothTransfersTests */,
 				A5F7838F2138D18900E7438D /* SmoothTransfersUITests */,
 				A5F7836E2138D18600E7438D /* Products */,
+				78C89034D3506D9959DFADA2 /* Pods */,
+				E31CADF3694F7E6780A191A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +144,7 @@
 				A5F7837C2138D18800E7438D /* Info.plist */,
 				A55DF9212138DFE900567AC8 /* TableViewCell.swift */,
 				A55DF9222138DFE900567AC8 /* TableViewCell.xib */,
+				A55DF9252138F3FB00567AC8 /* TokyoChallengeAPI.swift */,
 			);
 			path = SmoothTransfers;
 			sourceTree = "<group>";
@@ -134,6 +167,20 @@
 			path = SmoothTransfersUITests;
 			sourceTree = "<group>";
 		};
+		E31CADF3694F7E6780A191A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A53DEF2021390EDD0052B585 /* SwiftyJSON.framework */,
+				A53DEF1E21390ED90052B585 /* Result.framework */,
+				A53DEF1C21390ED40052B585 /* APIKit.framework */,
+				A53DEF1921390D7B0052B585 /* APIKit */,
+				553E46929C7AF1AC49EE1551 /* Pods_SmoothTransfers.framework */,
+				E9AF271A3EB92EC13C6DFAD7 /* Pods_SmoothTransfersTests.framework */,
+				3CF00105C6DDE19DC357AB9F /* Pods_SmoothTransfersUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5F783952138D18900E7438D /* Build configuration list for PBXNativeTarget "SmoothTransfers" */;
 			buildPhases = (
+				61A0319D4FE4750E040E766C /* [CP] Check Pods Manifest.lock */,
 				A5F783692138D18600E7438D /* Sources */,
 				A5F7836A2138D18600E7438D /* Frameworks */,
 				A5F7836B2138D18600E7438D /* Resources */,
+				2C7A7DF0AD153F840D97428B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,6 +207,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5F783982138D18900E7438D /* Build configuration list for PBXNativeTarget "SmoothTransfersTests" */;
 			buildPhases = (
+				10183BF9415260F1F8B91EEE /* [CP] Check Pods Manifest.lock */,
 				A5F7837D2138D18800E7438D /* Sources */,
 				A5F7837E2138D18800E7438D /* Frameworks */,
 				A5F7837F2138D18800E7438D /* Resources */,
@@ -176,6 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5F7839B2138D18900E7438D /* Build configuration list for PBXNativeTarget "SmoothTransfersUITests" */;
 			buildPhases = (
+				52BC38F5483F1228074EB784 /* [CP] Check Pods Manifest.lock */,
 				A5F783882138D18900E7438D /* Sources */,
 				A5F783892138D18900E7438D /* Frameworks */,
 				A5F7838A2138D18900E7438D /* Resources */,
@@ -261,11 +312,91 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10183BF9415260F1F8B91EEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmoothTransfersTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C7A7DF0AD153F840D97428B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SmoothTransfers/Pods-SmoothTransfers-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/APIKit/APIKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/APIKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmoothTransfers/Pods-SmoothTransfers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52BC38F5483F1228074EB784 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmoothTransfersUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61A0319D4FE4750E040E766C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmoothTransfers-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A5F783692138D18600E7438D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A55DF9262138F3FB00567AC8 /* TokyoChallengeAPI.swift in Sources */,
 				A55DF9232138DFE900567AC8 /* TableViewCell.swift in Sources */,
 				A55DF91C2138DED200567AC8 /* ListTableViewController.swift in Sources */,
 				A5F783712138D18600E7438D /* AppDelegate.swift in Sources */,
@@ -440,6 +571,7 @@
 		};
 		A5F783962138D18900E7438D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD3822419B8D94DEDD7ECDF2 /* Pods-SmoothTransfers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -458,6 +590,7 @@
 		};
 		A5F783972138D18900E7438D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE044B7731A5602D25CC1BD9 /* Pods-SmoothTransfers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -476,6 +609,7 @@
 		};
 		A5F783992138D18900E7438D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 264ABED20301A96346497D19 /* Pods-SmoothTransfersTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -496,6 +630,7 @@
 		};
 		A5F7839A2138D18900E7438D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DCAC86D9A09D7E19BA3FA11 /* Pods-SmoothTransfersTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +651,7 @@
 		};
 		A5F7839C2138D18900E7438D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F72E9FBFB3D1867DB5BFFC7 /* Pods-SmoothTransfersUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +671,7 @@
 		};
 		A5F7839D2138D18900E7438D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96A003E4080BFD5076F4E18E /* Pods-SmoothTransfersUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
