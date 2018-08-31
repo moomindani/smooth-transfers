@@ -15,9 +15,13 @@ class ListTableViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
-        
+        tableView.rowHeight = 300
+        tableView.rowHeight = UITableViewAutomaticDimension
 
-       
+        
+        let request = TokyoChallengeAPI.TrainInformation(operatorID: "odpt.Operator:TokyoMetro")
+        Session.send(request) { print($0) }
+        
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -54,6 +58,7 @@ class ListTableViewController: UITableViewController {
         cell.timerLabel.text = "0"
         cell.judgementLabel.text = "Time judgement"
         cell.contentView.backgroundColor = UIColor.blue
+        
 
         return cell
     }
