@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iE7-lx-fsL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,14 +10,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--List Table View Controller-->
         <scene sceneID="2jT-1H-ypK">
             <objects>
-                <tableViewController id="iE7-lx-fsL" sceneMemberID="viewController">
+                <tableViewController id="iE7-lx-fsL" customClass="ListTableViewController" customModule="SmoothTransfers" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kiu-WO-ROL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="wEZ-40-Pta">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -30,13 +31,12 @@
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="iE7-lx-fsL" id="tCV-9o-ZJH"/>
-                            <outlet property="delegate" destination="iE7-lx-fsL" id="3Ae-FM-jZm"/>
                         </connections>
                     </tableView>
                     <toolbarItems>
                         <barButtonItem title="Settings" id="sGw-3l-6qp">
                             <connections>
-                                <segue destination="KPf-zn-8Mc" kind="show" id="w40-r7-QDb"/>
+                                <segue destination="KPf-zn-8Mc" kind="show" id="JSj-mR-4xu"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
@@ -47,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="1096.8" y="-522.18890554722645"/>
         </scene>
-        <!--View Controller-->
+        <!--Setting View Controller-->
         <scene sceneID="Phv-Al-c0I">
             <objects>
-                <viewController id="KPf-zn-8Mc" sceneMemberID="viewController">
+                <viewController id="KPf-zn-8Mc" customClass="SettingViewController" customModule="SmoothTransfers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2PO-cb-SR3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,24 +61,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="foZ-eq-WBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1991" y="-522"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="aO2-5O-AEB">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4By-Nh-TCo" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NAG-dG-VWc">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="iE7-lx-fsL" kind="relationship" relationship="rootViewController" id="8vS-GH-Qqp"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="azj-K5-otF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="157.59999999999999" y="-522.18890554722645"/>
         </scene>
     </scenes>
 </document>

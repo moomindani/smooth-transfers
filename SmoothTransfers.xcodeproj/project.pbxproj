@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A55DF91C2138DED200567AC8 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55DF91B2138DED200567AC8 /* ListTableViewController.swift */; };
+		A55DF91E2138DEF600567AC8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55DF91D2138DEF600567AC8 /* SettingViewController.swift */; };
+		A55DF9232138DFE900567AC8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55DF9212138DFE900567AC8 /* TableViewCell.swift */; };
+		A55DF9242138DFE900567AC8 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A55DF9222138DFE900567AC8 /* TableViewCell.xib */; };
 		A5F783712138D18600E7438D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F783702138D18600E7438D /* AppDelegate.swift */; };
-		A5F783732138D18600E7438D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F783722138D18600E7438D /* ViewController.swift */; };
 		A5F783762138D18600E7438D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F783742138D18600E7438D /* Main.storyboard */; };
 		A5F783782138D18800E7438D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5F783772138D18800E7438D /* Assets.xcassets */; };
 		A5F7837B2138D18800E7438D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F783792138D18800E7438D /* LaunchScreen.storyboard */; };
@@ -34,9 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A55DF91B2138DED200567AC8 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		A55DF91D2138DEF600567AC8 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		A55DF9212138DFE900567AC8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		A55DF9222138DFE900567AC8 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		A5F7836D2138D18600E7438D /* SmoothTransfers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmoothTransfers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F783702138D18600E7438D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5F783722138D18600E7438D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5F783752138D18600E7438D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5F783772138D18800E7438D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5F7837A2138D18800E7438D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,11 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				A5F783702138D18600E7438D /* AppDelegate.swift */,
-				A5F783722138D18600E7438D /* ViewController.swift */,
+				A55DF91B2138DED200567AC8 /* ListTableViewController.swift */,
+				A55DF91D2138DEF600567AC8 /* SettingViewController.swift */,
 				A5F783742138D18600E7438D /* Main.storyboard */,
 				A5F783772138D18800E7438D /* Assets.xcassets */,
 				A5F783792138D18800E7438D /* LaunchScreen.storyboard */,
 				A5F7837C2138D18800E7438D /* Info.plist */,
+				A55DF9212138DFE900567AC8 /* TableViewCell.swift */,
+				A55DF9222138DFE900567AC8 /* TableViewCell.xib */,
 			);
 			path = SmoothTransfers;
 			sourceTree = "<group>";
@@ -230,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5F7837B2138D18800E7438D /* LaunchScreen.storyboard in Resources */,
+				A55DF9242138DFE900567AC8 /* TableViewCell.xib in Resources */,
 				A5F783782138D18800E7438D /* Assets.xcassets in Resources */,
 				A5F783762138D18600E7438D /* Main.storyboard in Resources */,
 			);
@@ -256,8 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5F783732138D18600E7438D /* ViewController.swift in Sources */,
+				A55DF9232138DFE900567AC8 /* TableViewCell.swift in Sources */,
+				A55DF91C2138DED200567AC8 /* ListTableViewController.swift in Sources */,
 				A5F783712138D18600E7438D /* AppDelegate.swift in Sources */,
+				A55DF91E2138DEF600567AC8 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,13 +443,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3635G6N88M;
+				DEVELOPMENT_TEAM = XGL65VX2SC;
 				INFOPLIST_FILE = SmoothTransfers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mooapp.SmoothTransfers;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moomindani.SmoothTransfers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -449,13 +461,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3635G6N88M;
+				DEVELOPMENT_TEAM = XGL65VX2SC;
 				INFOPLIST_FILE = SmoothTransfers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mooapp.SmoothTransfers;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moomindani.SmoothTransfers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
