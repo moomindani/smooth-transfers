@@ -11,6 +11,8 @@ import UIKit
 class TableViewCell: UITableViewCell {
     
     @IBOutlet var timeLabel: UILabel!
+    @IBOutlet var timerLabel: UILabel!
+    @IBOutlet var judgementLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

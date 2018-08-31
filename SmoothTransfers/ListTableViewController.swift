@@ -14,7 +14,10 @@ class ListTableViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
+        
 
+       
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -45,7 +48,11 @@ class ListTableViewController: UITableViewController {
             as! TableViewCell
         // Configure the cell...
         
-        cell.timeLabel.text = "Time Sample"
+       
+        cell.timeLabel.text = "00:00"
+        cell.timerLabel.text = "0"
+        cell.judgementLabel.text = "Time judgement"
+        cell.contentView.backgroundColor = UIColor.blue
 
         return cell
     }
