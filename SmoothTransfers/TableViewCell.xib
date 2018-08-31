@@ -54,7 +54,7 @@
                 <color key="tintColor" red="0.97429201229999995" green="0.97273087830000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             </tableViewCellContentView>
             <color key="backgroundColor" red="0.98159250190000003" green="0.96154722189999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <color key="tintColor" red="0.97537126610000002" green="0.0" blue="0.072902597360000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <accessibility key="accessibilityConfiguration" identifier="cellTable"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <userDefinedRuntimeAttributes>
@@ -68,7 +68,7 @@
                 <outlet property="timeLabel" destination="IWx-Ug-6s7" id="f3G-cY-Fh3"/>
                 <outlet property="timerLabel" destination="NIv-OD-9dT" id="qIm-YN-Qt4"/>
             </connections>
-            <point key="canvasLocation" x="574" y="-151"/>
+            <point key="canvasLocation" x="573.5" y="-151"/>
         </tableViewCell>
     </objects>
 </document>

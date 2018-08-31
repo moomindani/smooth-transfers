@@ -8,21 +8,81 @@
 
 import UIKit
 import APIKit
+import EventKit
 
 class ListTableViewController: UITableViewController {
-
+    var testEventLocation = ""
+    var cellIndex = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         tableView.rowHeight = 300
-        tableView.rowHeight = UITableViewAutomaticDimension
 
+        // Accessing Calendar data
+        let eventStore = EKEventStore()
         
-        let request = TokyoChallengeAPI.TrainInformation(operatorID: "odpt.Operator:TokyoMetro")
-        Session.send(request) { print($0) }
+        let status = EKEventStore.authorizationStatus(for: .event)
+        var isAuth = false
+        switch status {
+        case .notDetermined:
+            isAuth = false
+        case .restricted:
+            isAuth = false
+        case .denied:
+            isAuth = false
+        case .authorized:
+            isAuth = true
+        }
+        if !isAuth {
+            eventStore.requestAccess(to: .event, completion: {
+                (granted, error) in
+                if granted {
+                    print("granted")
+                }
+                else {
+                    print("rejected")
+                    return
+                }
+            })
+        }
+
+        // Adding Calendar data (Dummy)
+        let event = EKEvent(eventStore: eventStore)
+        event.title = "test 2018-08-31"
+        event.location = "Meguro station"
+        event.startDate = Calendar.current.date(from: DateComponents(year: 2018, month: 8, day: 10, hour: 19, minute: 30, second: 00))
+        event.endDate = Calendar.current.date(from: DateComponents(year: 2018, month: 8, day: 10, hour: 22, minute: 00, second: 00))
+        event.calendar = eventStore.defaultCalendarForNewEvents
+        do {
+            try eventStore.save(event, span: .thisEvent)
+        }
+        catch let error {
+            print(error)
+        }
         
+        // Retrieving Calendar data
+        let startDate = Calendar.current.date(from: DateComponents(year: 2018, month: 8, day: 1, hour: 00, minute: 00, second: 00))
+        let endDate = Calendar.current.date(from: DateComponents(year: 2018, month: 8, day: 31, hour: 23, minute: 59, second: 59))
+        let defaultCalendar = eventStore.defaultCalendarForNewEvents
+        let predicate = eventStore.predicateForEvents(withStart: startDate!, end: endDate!, calendars: [defaultCalendar!])
+        var events = eventStore.events(matching: predicate)
+        print(events)
+        for e in events {
+            testEventLocation = e.location!
+        }
         
+        // Tokyo Ko-tsu Open Data API
+        let request1 = TokyoChallengeAPI.StationTimetable(stationID: "odpt.Station:JR-East.JobanRapid.Ueno")
+        Session.send(request1) { print($0) }
+       
+        let request2 = TokyoChallengeAPI.Railway(railwayID: "odpt.Railway:JR-East.JobanRapid")
+        Session.send(request2) { print($0) }
+
+        let request3 = TokyoChallengeAPI.TrainTimetable(railwayID: "odpt.Railway:JR-East.JobanRapid")
+        Session.send(request3) { print($0) }
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -56,9 +116,15 @@ class ListTableViewController: UITableViewController {
        
         cell.timeLabel.text = "00:00"
         cell.timerLabel.text = "0"
-        cell.judgementLabel.text = "Time judgement"
-        cell.contentView.backgroundColor = UIColor.blue
+        cell.judgementLabel.text = testEventLocation
         
+        print()
+        if (cellIndex % 2 == 0) {
+            cell.contentView.backgroundColor = UIColor.red
+        } else {
+            cell.contentView.backgroundColor = UIColor.green
+        }
+        cellIndex += 1
 
         return cell
     }

@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		15D18B52A85F44816D681A4D /* Pods_SmoothTransfersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9AF271A3EB92EC13C6DFAD7 /* Pods_SmoothTransfersTests.framework */; };
-		26A645E9786E1599F95C02C9 /* Pods_SmoothTransfers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553E46929C7AF1AC49EE1551 /* Pods_SmoothTransfers.framework */; };
-		7A9CB3A790F54F191EB1A6B5 /* Pods_SmoothTransfersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF00105C6DDE19DC357AB9F /* Pods_SmoothTransfersUITests.framework */; };
-		A53DEF1D21390ED40052B585 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53DEF1C21390ED40052B585 /* APIKit.framework */; };
-		A53DEF1F21390ED90052B585 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53DEF1E21390ED90052B585 /* Result.framework */; };
-		A53DEF2121390EDD0052B585 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53DEF2021390EDD0052B585 /* SwiftyJSON.framework */; };
+		26A645E9786E1599F95C02C9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		7A9CB3A790F54F191EB1A6B5 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		A53DEF1D21390ED40052B585 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		A53DEF1F21390ED90052B585 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		A53DEF2121390EDD0052B585 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		A53DEF23213930EE0052B585 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53DEF22213930EE0052B585 /* EventKit.framework */; };
 		A55DF91C2138DED200567AC8 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55DF91B2138DED200567AC8 /* ListTableViewController.swift */; };
 		A55DF91E2138DEF600567AC8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55DF91D2138DEF600567AC8 /* SettingViewController.swift */; };
 		A55DF9232138DFE900567AC8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55DF9212138DFE900567AC8 /* TableViewCell.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A53DEF22213930EE0052B585 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		A55DF91B2138DED200567AC8 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		A55DF91D2138DEF600567AC8 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A55DF9212138DFE900567AC8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -71,10 +73,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A53DEF2121390EDD0052B585 /* SwiftyJSON.framework in Frameworks */,
-				A53DEF1F21390ED90052B585 /* Result.framework in Frameworks */,
-				A53DEF1D21390ED40052B585 /* APIKit.framework in Frameworks */,
-				26A645E9786E1599F95C02C9 /* Pods_SmoothTransfers.framework in Frameworks */,
+				A53DEF23213930EE0052B585 /* EventKit.framework in Frameworks */,
+				A53DEF2121390EDD0052B585 /* (null) in Frameworks */,
+				A53DEF1F21390ED90052B585 /* (null) in Frameworks */,
+				A53DEF1D21390ED40052B585 /* (null) in Frameworks */,
+				26A645E9786E1599F95C02C9 /* (null) in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A9CB3A790F54F191EB1A6B5 /* Pods_SmoothTransfersUITests.framework in Frameworks */,
+				7A9CB3A790F54F191EB1A6B5 /* (null) in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,10 +105,6 @@
 			children = (
 				FD3822419B8D94DEDD7ECDF2 /* Pods-SmoothTransfers.debug.xcconfig */,
 				EE044B7731A5602D25CC1BD9 /* Pods-SmoothTransfers.release.xcconfig */,
-				264ABED20301A96346497D19 /* Pods-SmoothTransfersTests.debug.xcconfig */,
-				0DCAC86D9A09D7E19BA3FA11 /* Pods-SmoothTransfersTests.release.xcconfig */,
-				1F72E9FBFB3D1867DB5BFFC7 /* Pods-SmoothTransfersUITests.debug.xcconfig */,
-				96A003E4080BFD5076F4E18E /* Pods-SmoothTransfersUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -170,13 +169,8 @@
 		E31CADF3694F7E6780A191A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A53DEF2021390EDD0052B585 /* SwiftyJSON.framework */,
-				A53DEF1E21390ED90052B585 /* Result.framework */,
-				A53DEF1C21390ED40052B585 /* APIKit.framework */,
-				A53DEF1921390D7B0052B585 /* APIKit */,
-				553E46929C7AF1AC49EE1551 /* Pods_SmoothTransfers.framework */,
+				A53DEF22213930EE0052B585 /* EventKit.framework */,
 				E9AF271A3EB92EC13C6DFAD7 /* Pods_SmoothTransfersTests.framework */,
-				3CF00105C6DDE19DC357AB9F /* Pods_SmoothTransfersUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -609,7 +603,6 @@
 		};
 		A5F783992138D18900E7438D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 264ABED20301A96346497D19 /* Pods-SmoothTransfersTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -630,7 +623,6 @@
 		};
 		A5F7839A2138D18900E7438D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DCAC86D9A09D7E19BA3FA11 /* Pods-SmoothTransfersTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -651,7 +643,6 @@
 		};
 		A5F7839C2138D18900E7438D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F72E9FBFB3D1867DB5BFFC7 /* Pods-SmoothTransfersUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -671,7 +662,6 @@
 		};
 		A5F7839D2138D18900E7438D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96A003E4080BFD5076F4E18E /* Pods-SmoothTransfersUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
