@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import APIKit
 
 class ListTableViewController: UITableViewController {
 
@@ -15,6 +16,9 @@ class ListTableViewController: UITableViewController {
         
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
 
+        let request = TokyoChallengeAPI.TrainInformation(operatorID: "odpt.Operator:TokyoMetro")
+        print(request)
+        Session.send(request) { print($0) }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -36,7 +40,7 @@ class ListTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return 3
     }
 
     
