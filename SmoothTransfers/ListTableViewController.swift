@@ -68,7 +68,7 @@ class ListTableViewController: UITableViewController {
         let endDate = Calendar.current.date(from: DateComponents(year: 2018, month: 8, day: 31, hour: 23, minute: 59, second: 59))
         let defaultCalendar = eventStore.defaultCalendarForNewEvents
         let predicate = eventStore.predicateForEvents(withStart: startDate!, end: endDate!, calendars: [defaultCalendar!])
-        var events = eventStore.events(matching: predicate)
+        let events = eventStore.events(matching: predicate)
         print(events)
         for e in events {
             testEventLocation = e.location!

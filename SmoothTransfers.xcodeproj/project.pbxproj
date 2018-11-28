@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		15D18B52A85F44816D681A4D /* Pods_SmoothTransfersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9AF271A3EB92EC13C6DFAD7 /* Pods_SmoothTransfersTests.framework */; };
-		26A645E9786E1599F95C02C9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
-		7A9CB3A790F54F191EB1A6B5 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
-		A53DEF1D21390ED40052B585 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
-		A53DEF1F21390ED90052B585 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
-		A53DEF2121390EDD0052B585 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		1E3DBE7C4C13E9EC53F91F11 /* Pods_SmoothTransfers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB337468FEA71A0497A8220 /* Pods_SmoothTransfers.framework */; };
+		26A645E9786E1599F95C02C9 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		7A9CB3A790F54F191EB1A6B5 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		A53DEF1D21390ED40052B585 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		A53DEF1F21390ED90052B585 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		A53DEF2121390EDD0052B585 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
 		A53DEF23213930EE0052B585 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53DEF22213930EE0052B585 /* EventKit.framework */; };
 		A55DF91C2138DED200567AC8 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55DF91B2138DED200567AC8 /* ListTableViewController.swift */; };
 		A55DF91E2138DEF600567AC8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55DF91D2138DEF600567AC8 /* SettingViewController.swift */; };
@@ -74,6 +75,7 @@
 		C29E54927D7374A2CA66AE36 /* Pods-SmoothTransfersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothTransfersUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmoothTransfersUITests/Pods-SmoothTransfersUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D54C46C7C8B7749E41CF7298 /* Pods-SmoothTransfersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothTransfersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmoothTransfersTests/Pods-SmoothTransfersTests.release.xcconfig"; sourceTree = "<group>"; };
 		E9AF271A3EB92EC13C6DFAD7 /* Pods_SmoothTransfersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmoothTransfersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB337468FEA71A0497A8220 /* Pods_SmoothTransfers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmoothTransfers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE044B7731A5602D25CC1BD9 /* Pods-SmoothTransfers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothTransfers.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmoothTransfers/Pods-SmoothTransfers.release.xcconfig"; sourceTree = "<group>"; };
 		FD3822419B8D94DEDD7ECDF2 /* Pods-SmoothTransfers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothTransfers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmoothTransfers/Pods-SmoothTransfers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
