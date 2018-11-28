@@ -16,7 +16,7 @@ extension TokyoChallengeAPIRequest {
     var parameters: Any? {
         var params = self.params
         // ACL_CONSUMERKEYを取得したアクセストークンで置き換える
-        params["acl:consumerKey"] = "62f59d661151ebb350a24a5b4d54c8738d35919edbbe581eae989f572e195ed7"
+        params["acl:consumerKey"] = "ACL_CONSUMERKEY"
         return params
     }
     var method: HTTPMethod {
