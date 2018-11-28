@@ -9,6 +9,7 @@
 import UIKit
 import APIKit
 import EventKit
+import MapKit
 
 class ListTableViewController: UITableViewController {
     var testEventLocation = ""
@@ -75,14 +76,72 @@ class ListTableViewController: UITableViewController {
         
         // Tokyo Ko-tsu Open Data API
         let request1 = TokyoChallengeAPI.StationTimetable(stationID: "odpt.Station:JR-East.JobanRapid.Ueno")
-        Session.send(request1) { print($0) }
+        //Session.send(request1) { print($0) }
        
         let request2 = TokyoChallengeAPI.Railway(railwayID: "odpt.Railway:JR-East.JobanRapid")
-        Session.send(request2) { print($0) }
+        //Session.send(request2) { print($0) }
 
         let request3 = TokyoChallengeAPI.TrainTimetable(railwayID: "odpt.Railway:JR-East.JobanRapid")
-        Session.send(request3) { print($0) }
+        //Session.send(request3) { print($0) }
 
+        // MapKit API to get route
+        print("Accessing MapKit")
+        let request = MKDirectionsRequest()
+        request.source = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 35.681382, longitude: 139.76608399999998), addressDictionary: nil)) // tokyo station
+        request.destination = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 35.63398, longitude: 139.716), addressDictionary: nil)) // meguro station
+        request.requestsAlternateRoutes = true;
+        request.transportType = MKDirectionsTransportType.any
+        
+        let directions = MKDirections(request: request)
+        
+//        directions.calculate(completionHandler: {(response, error) in
+//
+//            guard let routes = response?.routes else {
+//                print(error)
+//                return
+//            }
+//            for route in routes {
+//                print("==Route==")
+//                print(route.name)
+//                print(route.transportType)
+//                print(route.distance)
+//                print(route.expectedTravelTime)
+//                print(route.advisoryNotices)
+//                for step in route.steps {
+//                    print(step.distance)
+//                    print(step.instructions)
+//                    print(step.transportType)
+//                }
+//            }
+//
+//        })
+        
+        // calculate ETA
+        print("Accessing MapKit for ETA")
+        let requestETA = MKDirectionsRequest()
+        request.source = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 35.681382, longitude: 139.76608399999998), addressDictionary: nil)) // tokyo station
+        request.destination = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 35.63398, longitude: 139.716), addressDictionary: nil)) // meguro station
+        request.requestsAlternateRoutes = true;
+        request.transportType = MKDirectionsTransportType.transit
+        
+        let directionsETA = MKDirections(request: request)
+        
+        directions.calculateETA(completionHandler: {(response, error) in
+            
+            if (error != nil){
+                print(error)
+            }
+            
+            print(response?.source)
+            print(response?.destination)
+            print(response?.expectedDepartureDate)
+            print(response?.expectedArrivalDate)
+            print(response?.expectedTravelTime)
+
+            
+        })
+
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
