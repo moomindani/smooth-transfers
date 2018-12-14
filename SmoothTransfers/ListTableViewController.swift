@@ -70,9 +70,30 @@ class ListTableViewController: UITableViewController {
         let predicate = eventStore.predicateForEvents(withStart: startDate!, end: endDate!, calendars: [defaultCalendar!])
         let events = eventStore.events(matching: predicate)
         print(events)
+        
+        
+        print("Retrieving location for events")
         for e in events {
             testEventLocation = e.location!
+            
+            // Placemark to latitude/longtitude
+            CLGeocoder().geocodeAddressString(testEventLocation, completionHandler: { placemarks, error in
+                if (error != nil) {
+                    return
+                }
+                
+                if let placemark = placemarks?[0]  {
+                    let lat = String(format: "%.04f", (placemark.location?.coordinate.longitude ?? 0.0)!)
+                    let lon = String(format: "%.04f", (placemark.location?.coordinate.latitude ?? 0.0)!)
+                    let name = placemark.name!
+                    let country = placemark.country!
+                    let region = placemark.administrativeArea!
+                    print("\(lat),\(lon)\n\(name),\(region) \(country)")
+                }
+            })
         }
+        
+        
         
         // Tokyo Ko-tsu Open Data API
         let request1 = TokyoChallengeAPI.StationTimetable(stationID: "odpt.Station:JR-East.JobanRapid.Ueno")
@@ -119,14 +140,14 @@ class ListTableViewController: UITableViewController {
         // calculate ETA
         print("Accessing MapKit for ETA")
         let requestETA = MKDirectionsRequest()
-        request.source = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 35.681382, longitude: 139.76608399999998), addressDictionary: nil)) // tokyo station
-        request.destination = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 35.63398, longitude: 139.716), addressDictionary: nil)) // meguro station
-        request.requestsAlternateRoutes = true;
-        request.transportType = MKDirectionsTransportType.transit
+        requestETA.source = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 35.706419, longitude: 139.7812513), addressDictionary: nil)) // Okachimachi church
+        requestETA.destination = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 35.6320029, longitude: 139.7113484), addressDictionary: nil)) // Meguro Gajoen
+        requestETA.requestsAlternateRoutes = true;
+        requestETA.transportType = MKDirectionsTransportType.transit
         
-        let directionsETA = MKDirections(request: request)
+        let directionsETA = MKDirections(request: requestETA)
         
-        directions.calculateETA(completionHandler: {(response, error) in
+        directionsETA.calculateETA(completionHandler: {(response, error) in
             
             if (error != nil){
                 print(error)
